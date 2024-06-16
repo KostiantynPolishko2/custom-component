@@ -11,6 +11,8 @@ root.render(
   <React.StrictMode>
     <main>
       <CardTv></CardTv>
+      <CardTv></CardTv>
+      <CardTv></CardTv>
     </main>
     
     {/* <Main></Main> */}

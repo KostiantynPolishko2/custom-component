@@ -28,8 +28,7 @@ div.card-tv__img-icon{
     position: absolute;
     width: var(--icon-delivery__size);
     height: var(--icon-delivery__size);
-    top: var(--icon-delivery__offset);
-    right: var(--icon-delivery__offset);
+    transform: translate(calc(var(--card-tv__width) - var(--icon-delivery__size) - var(--icon-delivery__offset)), var(--icon-delivery__offset));
 }
 
 .card-tv__img-icon{
