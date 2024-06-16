@@ -1,0 +1,15 @@
+div.card-test{
+    width: 150px;
+    background-color: aqua;
+}
+
+.card-test{
+    text-align: justify;
+}
+
+div.card-test > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
