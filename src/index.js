@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './components/Default/App';
+// import Test from './components/Test/Test'
+// import Main from './components/Main/Main';
 import CardTv from './components/CardTv/CardTv';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <CardTv></CardTv>
+    <main>
+      <CardTv></CardTv>
+    </main>
+    
+    {/* <Main></Main> */}
+    {/* <Test></Test> */}
   </React.StrictMode>
 );
 

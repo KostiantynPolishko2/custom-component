@@ -10,10 +10,12 @@ div.card-tv{
     width: var(--card-tv__width);
     height: var(--card-tv__height);
     border-radius: var(--card-tv_radius);
+    margin: 5px;
 }
 
 .card-tv{
     box-shadow: 5px 5px 2px -0px rgb(214, 211, 211);
+    background-color: rgb(248, 245, 231);
 }
 
 div.card-tv__img{
@@ -42,16 +44,86 @@ div.card-tv__img > img {
     border-radius: inherit;;
 }
 
-div.card-tv__date{
-    background-color: blueviolet;
+i.material-symbols-outlined{
+    position: absolute;
+}
+
+.item__position-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.card-tv__data{
     height: calc(var(--card-tv__height) * 0.4);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
 }
 
-i.material-symbols-outlined{
+div.card-tv__data > div {
+    position: relative;
+    width: 90%;
+    height: 80%;
+}
+
+div.card-tv__data-description{
+    height: 35%;
+}
+
+div.card-tv__data-description > div:first-child {
+    width: 90%;
+    height: 100%;
+    padding-right: 5px;
+}
+
+div.card-tv__data-description p {
+    color: blueviolet;
+    text-align: left;   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+div.card-tv__data__icon-favorite {
+    width: min-content;
+    height: min-content;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 10%;
+}
+
+div.card-tv__data__icon-favorite > i {
+    color: red;
+}
+
+div.card-tv__data-adress{
+    position: absolute;
+    bottom: 0px;
+}
+
+p.card-tv__data-price{
+    margin-top: 5px;
+}
+
+.card-tv__data-price{
+    font-size: 18px;
+    float: none;
+}
+
+p.card-tv__data-price > span:first-child{
+    font-weight: 600;
+    color: rgb(43, 102, 27);
+}
+
+p.card-tv__data-price > span:last-child{
+    font-weight: 500;
+    color: rgb(117, 163, 109);
+}
+
+div.card-tv__data-adress > p {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(78, 76, 76);
+    margin-top: 2px;
 }
